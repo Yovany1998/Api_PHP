@@ -1,0 +1,42 @@
+.LoginPage{
+    .LogoContainer{
+        text-align: center;
+        padding: 2rem;
+    
+        .Logo{
+            display: inline-block;
+            height: 6rem;
+            width: 10rem;
+            background-color: #a7a7a7;
+        }
+    }
+    
+    .FormContainer{
+        text-align: center;
+    
+        .LoginForm{
+            display: inline-block;
+            
+            .FieldContainer{
+                padding: 0.6rem;
+    
+                input{
+                    padding: 0.7rem;
+                    width: calc(100% - 1.9rem);
+                }
+    
+                .Button{
+                    background-color: rgb(0, 81, 156);
+                    color: #FFF;
+                    padding: 1rem;
+                }
+            }
+    
+            .ErrorMessage{
+                color: #a00303;
+                font-size: 0.7rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

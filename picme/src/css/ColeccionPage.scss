@@ -1,0 +1,68 @@
+@import 'Vars';
+@import 'LoadingAxios';
+
+.ColeccionPage{
+    position: relative;
+
+    .LoadingAxios{
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        padding-top: 20rem;
+
+        .LoadingText{
+            padding-top: 1rem;
+            color: $TiltTextColor;
+        }
+    }
+
+    .Title{
+        margin-left: 1rem;
+    }
+    
+    .FotosContainer{
+        margin: 0px 1rem;
+
+        .FItem{
+            width: 100%;
+            height: 15rem;
+            background-size: cover;
+            position: relative;
+
+            .inFotoIcon{
+                background-color: rgba(0, 0, 0, 0.705);
+                padding: 0.3rem;
+                border-radius: 4px;
+                display: inline-block;
+                position: absolute;
+                right: 0.5rem;
+                top: 0.5rem;
+
+                i{
+                    color: $TiltTextColor;
+                }
+            }
+        }
+    }
+
+    .AddFotoButton{
+        display: block;
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        padding: 1rem;
+        background-color: $MainTiltColor;
+        color: $TiltTextColor;
+        border-radius: 10px;
+        cursor: pointer;
+        
+        i{
+            font-size: 2rem !important;
+        }
+    }
+}

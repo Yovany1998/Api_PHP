@@ -1,0 +1,89 @@
+@import 'Vars';
+
+.ColeccionesPage{
+
+    .AddColPage{
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        padding-top: 15rem;
+
+        .Container{
+            background-color: $MainWhiteColor;
+            margin: 0px 2rem;
+            padding: 1rem;
+            border-radius: 4px;
+
+            .NombreInput{
+                padding: 0rem 0rem 1rem 0rem;
+                
+                input{
+                    width: calc(100% - 0.5rem);
+                    height: 2rem;
+                }
+            }
+
+            .CrearButton{
+                font-size: 0.8rem;
+                background-color: $MainBackgroundColor;
+                color: $TiltTextColor;
+                padding: 1rem;
+            }
+
+            .CancelButton{
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
+                background-color: $MainLowColor;
+                color: $TiltTextColor;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .AddColButton{
+        display: block;
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        padding: 1rem;
+        background-color: $MainTiltColor;
+        color: $TiltTextColor;
+        border-radius: 10px;
+        cursor: pointer;
+        
+        i{
+            font-size: 2rem !important;
+        }
+    }
+
+    .Title{
+        margin-left: 1rem;
+    }
+
+    .CItem{
+        padding: 1.5rem 1rem;
+        margin: 1rem;
+        background-color: $MainBackgroundColor;
+        border-radius: 4px;
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+
+        .Desc{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .Icon{
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            vertical-align: middle;
+        }
+    }
+}
